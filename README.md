@@ -87,7 +87,7 @@
 
 For improvements or collaboration:
 Arpita Pani | Data Science Enthusiast  
-📧 [arpita.pani2018@gmail.com] (optional)  
+📧 [arpita.pani2018@gmail.com]   
 🔗 [LinkedIn](https://www.linkedin.com/in/arpitapani07/)
 
 
