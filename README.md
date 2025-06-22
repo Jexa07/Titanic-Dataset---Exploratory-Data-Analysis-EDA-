@@ -1,96 +1,114 @@
-# Titanic Dataset - Exploratory Data Analysis (EDA)
+<!-- Project Banner -->
+<p align="center">
+  <img src="https://i.postimg.cc/9QZZpwSJ/Untitled-design-5.png" width="80%" alt="Titanic EDA Banner" />
+</p>
+
+<h1 align="center">🚢 Titanic Dataset - Exploratory Data Analysis (EDA)</h1>
+
+<p align="center"><i>A data-driven voyage into survival insights from one of the most iconic datasets in ML history.</i></p>
+
+---
 
 ## 📁 Dataset Overview
 
-- Source: Titanic dataset (Kaggle)
-- Rows: 891
-- Columns: 12 (Survived, Pclass, Name, Sex, Age, SibSp, Parch, Ticket, Fare, Cabin, Embarked)
+- **Rows:** 891
+- **Columns:** 12 (`Survived`, `Pclass`, `Name`, `Sex`, `Age`, `SibSp`, `Parch`, `Ticket`, `Fare`, `Cabin`, `Embarked`)
 
+---
 
 ## 📌 Key Objectives
 
-- Handle missing values effectively
-- Understand distributions of numerical and categorical features
-- Identify outliers
-- Explore relationships between survival and other features
+- 🧼 Handle missing values effectively  
+- 📊 Understand distributions of numerical & categorical features  
+- 🚩 Identify outliers  
+- 🔍 Explore relationships between survival and other variables  
 
+---
 
-## 🔍 Exploratory Data Analysis Steps
+## 🔍 EDA Breakdown
 
-### 1. Data Loading and Inspection
-- Verified shape, columns, and data types.
-- Found major missing values in Age and Cabin.
+### 1️⃣ Data Loading and Inspection
+- Verified shape, columns, and data types
+- Major missing values in **Age** and **Cabin**
 
-### 2. Missing Values Visualization
-- Used missingno to visually analyze missing data patterns.
-- Cabin: ~77% missing → dropped or categorized
-- Age: ~20% missing → imputation suggested
+### 2️⃣ Missing Values Visualization
+- Used `missingno` for heatmap visuals  
+- `Cabin`: ~77% missing → dropped or binned  
+- `Age`: ~20% missing → imputation suggested  
 
-### 3. Univariate Analysis
-#### Numerical Features
-- Fare: Highly right-skewed with outliers
-- Age: Bimodal distribution, concentrated under 40
+### 3️⃣ Univariate Analysis
 
-#### Categorical Features
-- Sex: More males (577) than females (314)
-- Embarked: Most passengers from Southampton (644)
+**Numerical Features**
+- `Fare`: Right-skewed with multiple outliers
+- `Age`: Bimodal; concentration under 40
 
-### 4. Outlier Detection
-- Boxplots show high fare outliers (mostly 1st class)
-- Age has outliers at both extremes (infants and seniors)
+**Categorical Features**
+- `Sex`: Males (577) > Females (314)
+- `Embarked`: Most from **Southampton (S)**
 
-### 5. Correlation Matrix
-- Positive correlation: Fare ↔ Survived
-- Negative correlation: Pclass ↔ Survived
+### 4️⃣ Outlier Detection
+- Boxplots show high `Fare` outliers (mostly 1st class)
+- `Age` has outliers at extremes (infants + elderly)
 
-### 6. Bivariate Visualizations
-- *Survival vs Sex*: Higher survival rate among females  
-- *Survival vs Pclass*: 1st class had the highest survival  
-- *Age vs Survival*: Younger people had better chances  
-- *Fare vs Pclass*: Median fare rises with class
+### 5️⃣ Correlation Matrix
+- 📈 Positive: `Fare` ↔ `Survived`
+- 📉 Negative: `Pclass` ↔ `Survived`
 
+### 6️⃣ Bivariate Visualizations
+- `Sex` ↔ `Survived`: Females had higher survival rate
+- `Pclass` ↔ `Survived`: 1st class survived most
+- `Age` ↔ `Survived`: Younger passengers had better chances
+- `Fare` ↔ `Pclass`: Median fare increases with class
+
+---
 
 ## 📊 Key Findings
 
-| Feature     | Insight |
-|-------------|--------|
-| Sex     | Females had much higher survival rate |
-| Pclass  | Higher class = Higher survival rate |
-| Age     | Younger passengers more likely to survive |
-| Fare    | Higher fare correlates with better survival |
-| Embarked| Port 'C' passengers had higher survival than 'S' |
+| Feature    | Insight                                      |
+|------------|----------------------------------------------|
+| **Sex**    | Females had a much higher survival rate      |
+| **Pclass** | Higher class → Higher survival               |
+| **Age**    | Younger passengers more likely to survive    |
+| **Fare**   | Higher fare correlates with better survival  |
+| **Embarked** | Port ‘C’ passengers survived more than ‘S’ |
 
+---
 
 ## 🧠 Suggestions for Modeling
 
-- Encode categorical variables: Sex, Embarked, Pclass
-- Impute Age using median or regression
-- Drop or bin Cabin feature
-- Normalize/standardize Fare for ML models
+- Encode categorical vars: `Sex`, `Embarked`, `Pclass`  
+- Impute `Age` using median or regression  
+- Drop/bin `Cabin` feature  
+- Normalize/scale `Fare`  
 
+---
 
 ## 🛠 Technologies Used
 
-- Python (pandas, seaborn, matplotlib, missingno)
-- Google Colab
-- Word + Markdown for reporting
+![Python](https://img.shields.io/badge/-Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?style=for-the-badge&logo=pandas)
+![Seaborn](https://img.shields.io/badge/-Seaborn-004B87?style=for-the-badge)
+![Matplotlib](https://img.shields.io/badge/-Matplotlib-11557C?style=for-the-badge)
+![Google Colab](https://img.shields.io/badge/-Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
 
+---
 
-## 📌 How to Run
+## ▶️ How to Run
 
-1. Open the provided .ipynb file in Google Colab
-2. Upload the Titanic dataset CSV
-3. Run each cell for visualizations and insights
+1. Open the `.ipynb` notebook in Google Colab  
+2. Upload the Titanic dataset CSV  
+3. Run each cell to explore insights
 
+---
 
 ## 📬 Contact
 
-For improvements or collaboration:
-Arpita Pani | Data Science Enthusiast  
-📧 [arpita.pani2018@gmail.com]   
+Made with 💜 by **Arpita Pani**  
+📧 [arpita.pani2018@gmail.com](mailto:arpita.pani2018@gmail.com)  
 🔗 [LinkedIn](https://www.linkedin.com/in/arpitapani07/)
 
+---
 
 ## 📜 License
 
-This project is released under the MIT License.
+This project is released under the **MIT License**.
